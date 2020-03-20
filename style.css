@@ -1,0 +1,38 @@
+.sectionOne {
+	margin: 2em 0;
+}
+
+.header {
+	display: flex;
+}
+
+.helloAcc {
+	width: 50%;
+	display: flex;
+	justify-content: flex-start;
+}
+
+.logInOut {
+	width: 50%;
+	display: flex;
+	justify-content: flex-end;
+}
+
+
+.sectionThree{
+	margin-top: 2em 0;
+}
+
+.addProject {
+	display: flex;
+	justify-content: flex-end;
+}
+
+
+
+
+.inscriptionCss{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
