@@ -36,7 +36,7 @@ if(isset($_POST["save"]))
 
 ?>
 
-<div class="inscriptionCss">
+<div class="inscriptionCss container sectionOne">
 <form action="sub.php" method="POST">
 
     <div class="form-group">

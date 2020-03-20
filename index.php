@@ -54,6 +54,16 @@ if(isset($_SESSION["account"]["username"])) {
 	    </div>
 
 	    <div class="logInOut">
+	    	<?php if(isset($_SESSION["account"]["username"]) == false)
+			  {
+			?>
+	    	<a href="sub.php">
+	    		<button class="btn btn-primary"> S'inscrire </button>
+	    	</a>
+	    	<?php 
+	  		}
+	    	?>
+
 			<a href="logout.php">
 			<?php if(isset($_SESSION["account"]["username"]))
 			  {
@@ -123,6 +133,10 @@ if(isset($_SESSION["account"]["username"])) {
 						<?php echo($w["description"]); ?>
 					</td>
 
+
+						
+
+
 					<td>
 
 						<a href="editProjet.php?id=<?php echo $w['id']; ?>" class="btn btn-dark">Edit</a>
@@ -139,6 +153,8 @@ if(isset($_SESSION["account"]["username"])) {
 				</tr>
 			</form>
 
+			
+
 			<?php
 			}
 			?>
@@ -151,21 +167,16 @@ if(isset($_SESSION["account"]["username"])) {
 
 <section class="container sectionThree">
 	
-<div class="addProject">
+<div class="addProjet">
 	<form action="ajoutProjet.php">
 		<button class="btn btn-success">
-		
-		<?php if(isset($_SESSION["account"]["username"]))
-			{
-			echo "Ajouter un projet";
-			}
-		?>
-		
+			<?php echo "Ajouter un projet"; ?>	
 		</button>
 	</form>
 </div>
 
 </section>
+
 
 </body>
 </html>

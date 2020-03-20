@@ -74,13 +74,14 @@ class Works {
         return($work);
     }
 
-    function create_works($title, $description)
+    function create_works($title, $description, $url)
     {
         global $db;
-        $request = $db->prepare('INSERT INTO Works (title, description) VALUES (:title, :description)');
+        $request = $db->prepare('INSERT INTO Works (title, description, url) VALUES (:title, :description, :url)');
         $request->execute([
         	':title' => $title,
-        	':description' => $description
+        	':description' => $description,
+        	':url' => $url
         ]);
     }
 
