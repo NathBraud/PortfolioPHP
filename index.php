@@ -125,7 +125,7 @@ if(isset($_SESSION["account"]["username"])) {
 
 					<td>
 
-						<a href="editProjet.php?id=<?php echo $w['id']; ?>">Edit</a>
+						<a href="editProjet.php?id=<?php echo $w['id']; ?>" class="btn btn-dark">Edit</a>
 
 						
 						<button type="submit" name="delete" value="OK" class="btn btn-danger">
